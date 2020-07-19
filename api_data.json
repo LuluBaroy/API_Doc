@@ -26,7 +26,7 @@
             "type": "String",
             "optional": false,
             "field": "sauce",
-            "description": "<p>JSON containing sauce informations</p>"
+            "description": "<p>JSON containing sauce information</p>"
           }
         ]
       },
@@ -39,16 +39,13 @@
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Error",
-            "description": "<p>HTTP1.1/  404 Not Found</p>"
-          }
-        ]
-      }
+      "examples": [
+        {
+          "title": "Error Response if sauce doesn't exist",
+          "content": "\nHTTP1.1/  404 Not Found",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
@@ -123,22 +120,19 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "\nHTTP1.1/ 201 Created\n{\n \"message\":\"Nouvelle Sauce enregistrée !\"\n}",
+          "content": "\nHTTP1.1/ 201 Created\n{\n \"message\":\"New Sauce Registered !\"\n}",
           "type": "json"
         }
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Error",
-            "description": "<p>HTTP1.1/  400 Unauthorized</p>"
-          }
-        ]
-      }
+      "examples": [
+        {
+          "title": "Error Response if user isn't authenticated",
+          "content": "\nHTTP1.1/  400 Unauthorized",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
@@ -178,22 +172,19 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "\nHTTP1.1/ 200 OK\n{\nmessage: 'Sauce supprimée !'\n}",
+          "content": "\nHTTP1.1/ 200 OK\n{\nmessage: 'Sauce deleted !'\n}",
           "type": "json"
         }
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Error",
-            "description": "<p>HTTP1.1/  400 Unauthorized</p>"
-          }
-        ]
-      }
+      "examples": [
+        {
+          "title": "Error Response if user isn't authenticated",
+          "content": "\nHTTP1.1/  400 Unauthorized",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
@@ -233,22 +224,19 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "\nHTTP1.1/ 200 OK\n{\n'message': 'Like ajouté pour cette sauce !'\n}",
+          "content": "\nHTTP1.1/ 200 OK\n{\n'message': 'Like added for that sauce !'\n}",
           "type": "json"
         }
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Error",
-            "description": "<p>HTTP1.1/  400 Unauthorized</p>"
-          }
-        ]
-      }
+      "examples": [
+        {
+          "title": "Error Response if user isn't authenticated",
+          "content": "\nHTTP1.1/  400 Unauthorized",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
@@ -281,16 +269,13 @@
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Error",
-            "description": "<p>HTTP1.1/  400 Unauthorized</p>"
-          }
-        ]
-      }
+      "examples": [
+        {
+          "title": "Error Response if user isn't authenticated",
+          "content": "\nHTTP1.1/  400 Unauthorized",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
@@ -330,22 +315,19 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "\nHTTP1.1/ 200 OK\n{\nmessage: 'Sauce modifiée !'\n}",
+          "content": "\nHTTP1.1/ 200 OK\n{\nmessage: 'Sauce modified !'\n}",
           "type": "json"
         }
       ]
     },
     "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "Error",
-            "description": "<p>HTTP1.1/  400 Unauthorized</p>"
-          }
-        ]
-      }
+      "examples": [
+        {
+          "title": "Error Response if user isn't authenticated",
+          "content": "\nHTTP1.1/  400 Unauthorized",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
@@ -417,8 +399,8 @@
       },
       "examples": [
         {
-          "title": "Error-Response:",
-          "content": "HTTP1.1/  401 Unauthorized\n{\n \"error\": \"Mot de passe incorrect !\"\n}",
+          "title": "Error Response if user can't be authenticated",
+          "content": "HTTP1.1/  401 Unauthorized\n{\n \"error\": \"Wrong password !\"\n}",
           "type": "json"
         }
       ]
@@ -461,7 +443,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "\nHTTP1.1/ 201 Created\n{\n \"message\": \"Utilisateur créé !\"\n}",
+          "content": "\nHTTP1.1/ 201 Created\n{\n \"message\": \"New user has been created !\"\n}",
           "type": "json"
         }
       ]
@@ -479,8 +461,8 @@
       },
       "examples": [
         {
-          "title": "Error-Response:",
-          "content": "\nHTTP1.1/  422 Unprocessable Entity\n{\n \"errors\":\n [\n  {\n\t\"value\": \"12345\",\n\t\"msg\": \"Email et / ou mot de passe incorrect. Merci de renseigner un mail valide et / ou un mot de passe d'au moins 8 caractères\",\n\t\"param\": \"password\",\n\t\"location\": \"body\"\n  }\n ]\n}",
+          "title": "Error Response if user's trying to sign up with wrong parameters",
+          "content": "\nHTTP1.1/  422 Unprocessable Entity\n{\n \"errors\":\n [\n  {\n\t\"value\": \"12345\",\n\t\"msg\": \"Email and / or password incorrect. Please try with a valid mail and / or password with at least 8 chars\",\n\t\"param\": \"password\",\n\t\"location\": \"body\"\n  }\n ]\n}",
           "type": "json"
         }
       ]
