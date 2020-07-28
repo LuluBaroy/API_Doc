@@ -334,6 +334,123 @@
     "groupTitle": "Sauces"
   },
   {
+    "type": "delete",
+    "url": "/api/auth/:id",
+    "title": "Delete",
+    "name": "delete",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "ID",
+            "description": "<p>userId</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Message User deleted</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "\nHTTP1.1/ 200 OK\n{\n    \"message\": \"User deleted !\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Error",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error Response if user can't be authenticated",
+          "content": "HTTP1.1/  400 Unauthorized",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "/api/auth/:id/exports",
+    "title": "Export",
+    "name": "export_(need_a_\"files\"_directory_in_project_root)",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "ID",
+            "description": "<p>userId</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "file",
+            "description": "<p>Downloadable file containing user information</p>"
+          }
+        ]
+      }
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Error",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error Response if user information can't be found",
+          "content": "HTTP1.1/  404 Not Found",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "groupTitle": "User"
+  },
+  {
     "type": "post",
     "url": "/api/auth/login",
     "title": "Log in",
@@ -410,6 +527,158 @@
     "groupTitle": "User"
   },
   {
+    "type": "get",
+    "url": "/api/auth/:id",
+    "title": "Read",
+    "name": "readOne",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "ID",
+            "description": "<p>userId</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "userId",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "SHA1",
+            "description": "<p>user email</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "hash",
+            "description": "<p>password</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "\nHTTP1.1/ 200 OK\n{\n    \"_id\": \"5f1ee7667a4701f8084c33f4\",\n    \"email\": \"114605e63b127e2c37b0257a9d7601f018080ca5\",\n    \"password\": \"$2a$10$iP6uQFCEnrPhZV75G4Q9C.nqg0ksEgRwmPft.aq4RMrGroNXUUbW2\",\n    \"__v\": 0\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Error",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error Response if user information can't be found",
+          "content": "HTTP1.1/  404 Not Found\n{\n \"error\": \"Wrong password !\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "put",
+    "url": "/api/auth/:id",
+    "title": "Report",
+    "name": "report",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "ID",
+            "description": "<p>userId</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "ItemId",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "type",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Message New report has been created, our team will examinate it as soon as possible !</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "\nHTTP1.1/ 202 Accepted\n{\n    \"message\": \"New report has been created, our team will examinate it as soon as possible !\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Error",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error Response if itemId has alrealdy been reported",
+          "content": "HTTP1.1/  401 Unauthorized\n{\n    \"error\": \"A report has already been sent for this item !\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "groupTitle": "User"
+  },
+  {
     "type": "post",
     "url": "/api/auth/signup",
     "title": "Sign up",
@@ -422,8 +691,15 @@
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "user",
-            "description": "<p>'s email (unique)</p>"
+            "field": "email",
+            "description": "<p>(unique)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": "<p>(min 8 chars)</p>"
           }
         ]
       }
@@ -463,6 +739,75 @@
         {
           "title": "Error Response if user's trying to sign up with wrong parameters",
           "content": "\nHTTP1.1/  422 Unprocessable Entity\n{\n \"errors\":\n [\n  {\n\t\"value\": \"12345\",\n\t\"msg\": \"Email and / or password incorrect. Please try with a valid mail and / or password with at least 8 chars\",\n\t\"param\": \"password\",\n\t\"location\": \"body\"\n  }\n ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "put",
+    "url": "/api/auth/:id",
+    "title": "Update",
+    "name": "update",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "ID",
+            "description": "<p>userId</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "Email",
+            "description": "<p>OR Password OR Email AND Password - Each are possible</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Message User modified</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "\nHTTP1.1/ 200 OK\n{\n    \"message\": \"User modified !\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "Error",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error Response if user can't be authenticated",
+          "content": "HTTP1.1/  400 Unauthorized",
           "type": "json"
         }
       ]
