@@ -33,7 +33,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "\nHTTP1.1/ 200 OK\n{\n \"usersLiked\":[],\n \"usersDisliked\":[],\n \"_id\":\"5f13520d1917be88d87faa0c\",\n \"name\":\"Harissa\",\n \"manufacturer\":\"Heinz\",\n \"description\":\"13\",\n \"mainPepper\":\"no idea\",\n \"heat\":3,\n \"userId\":\"5f1352021917be88d87faa0b\",\n \"likes\":0,\n \"dislikes\":0,\n \"imageUrl\":\"http://localhost:3000/images/2603250782.jpg\",\n \"__v\":0\n}",
+          "content": "\nHTTP1.1/ 200 OK\n{\n    \"usersLiked\": [],\n    \"usersDisliked\": [],\n    \"_id\": \"5f2ea4c756e1e0f4701fb238\",\n    \"name\": \"Mayo\",\n    \"manufacturer\": \"Heinz\",\n    \"description\": \"123\",\n    \"mainPepper\": \"none\",\n    \"heat\": 1,\n    \"userId\": \"5f2d13f47f5d757e20cfa43b\",\n    \"likes\": 0,\n    \"dislikes\": 0,\n    \"imageUrl\": \"http://localhost:3000/images/5746504216.png\",\n    \"__v\": 0,\n    \"_links\": {\n        \"self\": {\n            \"method\": \"GET\",\n            \"href\": \"http://localhost:3000/api/sauces\"\n        },\n        \"create\": {\n            \"method\": \"POST\",\n            \"href\": \"http://localhost:3000/api/sauces\"\n        },\n        \"update\": {\n            \"method\": \"PUT\",\n            \"href\": \"http://localhost:3000/api/sauces/5f2ea4c756e1e0f4701fb238\"\n        },\n        \"delete\": {\n            \"method\": \"DELETE\",\n            \"href\": \"http://localhost:3000/api/sauces/5f2ea4c756e1e0f4701fb238\"\n        },\n        \"like\": {\n            \"method\": \"POST\",\n            \"href\": \"http://localhost:3000/api/sauces/5f2ea4c756e1e0f4701fb238/like\"\n        }\n    }\n}",
           "type": "json"
         }
       ]
@@ -48,7 +48,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
+    "filename": "controllers/sauces.js",
     "groupTitle": "Sauces"
   },
   {
@@ -135,7 +135,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
+    "filename": "controllers/sauces.js",
     "groupTitle": "Sauces"
   },
   {
@@ -187,7 +187,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
+    "filename": "controllers/sauces.js",
     "groupTitle": "Sauces"
   },
   {
@@ -239,7 +239,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
+    "filename": "controllers/sauces.js",
     "groupTitle": "Sauces"
   },
   {
@@ -263,7 +263,7 @@
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "\nHTTP1.1/ 200 OK\n\n[\n    {\n        \"usersLiked\": [],\n        \"usersDisliked\": [\n            \"5f1352021917be88d87faa0b\"\n        ],\n        \"_id\": \"5f135b41f186be8dc4c5fa7f\",\n        \"name\": \"Harissa\",\n        \"manufacturer\": \"Heinz\",\n        \"description\": \"123\",\n        \"mainPepper\": \"no idea\",\n        \"heat\": 3,\n        \"userId\": \"5f1352021917be88d87faa0b\",\n        \"likes\": 0,\n        \"dislikes\": 1,\n        \"imageUrl\": \"http://localhost:3000/images/3982395801.jpg\",\n        \"__v\": 0\n    }\n]",
+          "content": "\nHTTP1.1/ 200 OK\n\n[\n    {\n        \"usersLiked\": [],\n        \"usersDisliked\": [],\n        \"_id\": \"5f2ea4c756e1e0f4701fb238\",\n        \"name\": \"Mayo\",\n        \"manufacturer\": \"Heinz\",\n        \"description\": \"123\",\n        \"mainPepper\": \"none\",\n        \"heat\": 1,\n        \"userId\": \"5f2d13f47f5d757e20cfa43b\",\n        \"likes\": 0,\n        \"dislikes\": 0,\n        \"imageUrl\": \"http://localhost:3000/images/5746504216.png\",\n        \"__v\": 0,\n        \"_links\": {\n            \"self\": {\n                \"method\": \"GET\",\n                \"href\": \"http://localhost:3000/api/sauces\"\n            },\n            \"create\": {\n                \"method\": \"POST\",\n                \"href\": \"http://localhost:3000/api/sauces\"\n            },\n            \"update\": {\n                \"method\": \"PUT\",\n                \"href\": \"http://localhost:3000/api/sauces/5f2ea4c756e1e0f4701fb238\"\n            },\n            \"delete\": {\n                \"method\": \"DELETE\",\n                \"href\": \"http://localhost:3000/api/sauces/5f2ea4c756e1e0f4701fb238\"\n            },\n            \"like\": {\n                \"method\": \"POST\",\n                \"href\": \"http://localhost:3000/api/sauces/5f2ea4c756e1e0f4701fb238/like\"\n            }\n        }\n    }\n]",
           "type": "json"
         }
       ]
@@ -278,7 +278,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
+    "filename": "controllers/sauces.js",
     "groupTitle": "Sauces"
   },
   {
@@ -330,7 +330,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/sauces.js",
+    "filename": "controllers/sauces.js",
     "groupTitle": "Sauces"
   },
   {
@@ -392,14 +392,14 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "filename": "controllers/users.js",
     "groupTitle": "User"
   },
   {
     "type": "post",
     "url": "/api/auth/:id/exports",
     "title": "Export",
-    "name": "export_(need_a_\"files\"_directory_in_project_root)",
+    "name": "export",
     "group": "User",
     "parameter": {
       "fields": {
@@ -447,7 +447,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "filename": "controllers/users.js",
     "groupTitle": "User"
   },
   {
@@ -523,7 +523,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "filename": "controllers/users.js",
     "groupTitle": "User"
   },
   {
@@ -599,7 +599,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "filename": "controllers/users.js",
     "groupTitle": "User"
   },
   {
@@ -643,14 +643,14 @@
             "type": "String",
             "optional": false,
             "field": "message",
-            "description": "<p>Message New report has been created, our team will examinate it as soon as possible !</p>"
+            "description": "<p>Message New report has been created, our team will examine it as soon as possible !</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "\nHTTP1.1/ 202 Accepted\n{\n    \"message\": \"New report has been created, our team will examinate it as soon as possible !\"\n}",
+          "content": "\nHTTP1.1/ 202 Accepted\n{\n    \"message\": \"New report has been created, our team will examine it as soon as possible !\"\n}",
           "type": "json"
         }
       ]
@@ -668,14 +668,14 @@
       },
       "examples": [
         {
-          "title": "Error Response if itemId has alrealdy been reported",
+          "title": "Error Response if itemId has already been reported",
           "content": "HTTP1.1/  401 Unauthorized\n{\n    \"error\": \"A report has already been sent for this item !\"\n}",
           "type": "json"
         }
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "filename": "controllers/users.js",
     "groupTitle": "User"
   },
   {
@@ -744,7 +744,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "filename": "controllers/users.js",
     "groupTitle": "User"
   },
   {
@@ -813,7 +813,7 @@
       ]
     },
     "version": "0.0.0",
-    "filename": "C:/Users/lucie/OneDrive/Bureau/So_Pekocko_Back/controllers/users.js",
+    "filename": "controllers/users.js",
     "groupTitle": "User"
   }
 ]
